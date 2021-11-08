@@ -1,0 +1,19 @@
+{
+  "collection": "@nestjs/schematics",
+  "sourceRoot": "src",
+  "generateOptions": {
+    "spec": false
+  },
+  "compilerOptions": {
+    "plugins": [
+      {
+        "name": "@nestjs/swagger",
+        "options": {
+          "dtoFileNameSuffix": [".dto.ts"],
+          "dtoKeyOfComment": "description",
+          "controllerKeyOfComment": "description"
+        }
+      }
+    ]
+  }
+}
